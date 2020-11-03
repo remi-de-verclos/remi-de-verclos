@@ -1,30 +1,28 @@
+---
+title: Rémi de Verclos
+---
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
-    <title>R&eacute;mi de Joannis de Verclos</title>
+    <title>{{page.title}}</title>
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <meta name="keywords" content=""/>
+    <meta charset="utf-8">
     <meta name="robots" content="noodp"/>
-    <link rel="stylesheet" href="style.css">
+    <script type="http/javascript" src="http://livejs.com/live.js"></script>
+    <link rel="stylesheet" href="/assets/css/styles.css">
   </head>
 <body class="">
-        </span>
-      </span>
-    </span>
-  </span>
-</header>
 
 <div class="bloc">
-<h2> R&eacute;mi de Joannis de Verclos </h2>
-
-Huygensgbouw 03.722<br />
-Radboud University Nijmegen<br />
-<a href="mailto:r.deverclos@math.ru.nl">r.deverclos@math.ru.nl</a></p>
-
-<p> I am Postdoctoral reasearcher in the
+  <h2> Rémi de Verclos </h2>
+  <a>Phd Computer Science</a>
+  <p><a>remi . de . joannis de . verclos at ens-lyon.org</a></p>
+<!--  <a><small>My full name is de Joannis de Verclos, so you can also see this one.</small></a>
+!-->
+<p> I used to be Postdoctoral reasearcher in the
 <a href="https://www.ru.nl/math/">Departement of Mathematics</a>
 at Radboud University in Nijmegen.</p>
 </div>
@@ -34,72 +32,61 @@ at Radboud University in Nijmegen.</p>
 <h1 id="publications">Publications</h1>
 
 <ul>
-<li><p><strong>Bipartite induced density in triangle-free graphs.</strong>
-with
-Wouter Cames van Batenburg,
-Ross Kang,
-and Fran&ccedil;ois Pirot.</p></li>
-
-<li><p><strong>Occupancy fraction, fractional colouring, and triangle fraction.</strong>
-with Ewan Davies,
-Ross Kang
-and Fran&ccedil;ois Pirot.
-<a href="https://arxiv.org/pdf/1812.11152">arxiv</a></p></li>
-
-<li><p><strong>Colouring triangle-free graphs with local list sizes.</strong>
-with Ewan Davies,
-Ross Kang
-and Fran&ccedil;ois Pirot.
-Canadian Journal of Mathematics 61 (2017).
-<a href="https://arxiv.org/pdf/1812.07532">arxiv</a></p></li>
-
-<li><p><strong>Exact distance coloring in trees</strong>
-with
-<a href="http://pagesperso.g-scop.grenoble-inp.fr/~bousquen/">Nicolas Bousquet</a>,
-<a href="http://oc.inpg.fr/esperet/">Louis Esperet</a> and
-<a href="www.lamsade.dauphine.fr/~aharutyunAyan/">Ararat Harutyunyan</a>.
-<a href="http://arxiv.org/pdf/1703.06047">arXiv</a></p></li>
-
-<li><p><strong>Equitable Colorings of $K_4$-minor-free Graphs</strong>
-with Jean-S&eacute;bastien Sereni.
-Journal of Graph Algorithms and Applications (2017).
-<a href="https://arxiv.org/abs/1703.02250">arXiv</a></p></li>
-
-<li><p><strong>Additive bases and flows in graphs</strong>
-with Louis Esperet, Tien-Nam Le and St&eacute;phan Thomass&eacute;.</p></li>
-
-<li><p><strong>Colouring squares of claw-free graphs</strong>
-with <a href="http://www.math.ru.nl/~rkang/">Ross Kang</a>
-and Lucas Pastor.
-<a href="http://arxiv.org/pdf/1609.08645">arXiv</a></p></li>
-
-<li><p><strong>Limits of order-types</strong>
-with Xavier Goaoc, Alfredo Hubard, Jean-S&eacute;bastien Sereni and Jan Volec.
-31st International Symposium on Computational Geometry (2015).</p></li>
-
-<li><p><strong>On Fixed-Polynomial Size Circuit Lower Bounds for Uniform Polynomials in the Sense of Valiant</strong>
-with Herv&eacute; Fournier and Sylvain P&eacute;rifel.
-Information and Computation (2015).</p></li>
-
-<li><p><strong>The worst case behavior of randomized gossip protocols</strong>
-with Herv&eacute; Baumann, Pierre Fraignaud and Hovahnes Harutyunyan.
-Theorical Computer Science (2014).</p></li>
+  
+  {% for paper in site.data.publications %}
+  <li><h4><strong>{{ paper.title }}</strong></h4>
+    {% if paper.coauthors %}
+    with
+    {%- for coauthor in paper.coauthors -%}
+    {%- assign author = site.data.coauthors[coauthor] -%}
+    {%- unless forloop.first -%}{% if forloop.last %}
+    and
+    {%- else -%},{%- endif -%}{% endunless %}
+    {% if author.site -%}
+    <a href="{{author.site}}">{{author.name}}</a>
+    {%- else -%}
+    {{ author.name }}
+    {%- endif -%}
+    {%- endfor -%}
+    {%- else -%}
+    Single author paper
+    {%- endif -%}.
+    {% if paper.journal %}<em>{{paper.journal}}</em>{% endif %}
+    {% if paper.arxiv %}
+    <a href={{"https://arxiv.org/abs/" | append: paper.arxiv}}>arxiv:{{paper.arxiv}}</a>
+    {% endif %}
+  {% endfor %}
 </ul>
+
+<h2>Co-authors</h2>
+{% assign coauthors = site.data.coauthors | sort %}
+{% for author_entry in coauthors %}
+{% assign author=author_entry[1] %}
+{%- if author.site -%}
+    <a href="{{author.site}}">{{author.name}}</a>
+    {%- else -%}
+    {{author.name}}
+{%- endif -%}
+{%- if forloop.last %}.{% else %},{% endif %}
+{% endfor %}
 </div>
+
 
 
 <div class="bloc">
 <h1 id="programs">Programs</h1>
 
 <ul>
-<li><a href="https://github.com/avangogo/letteries">Lettreries</a>,
-an automatic writer of french poetry.
-You can read some of its creations
-<a href="https://choum.net/lettreries">there</a>.</li>
 <li>An <a href="https://crates.io/crates/flag-algebra">implementation of flag algebras</a>
 written in Rust
 (a previous version in OCaml can be found
-<a href="https://github.com/avangogo/flag">there</a>).</li>
+  <a href="https://github.com/avangogo/flag">there</a>).</li>
+<li><a href="https://github.com/avangogo/letteries">Lettreries</a>,
+  An automatic writer of french poetry that randomly produces grammatically correct text with constraits of verse form and rhymes by backtracking on a Markov chain.
+  The programs computes phonetics representations (IPA) of words with a finite transducer
+  built from a set of rules.
+  You can read some of its creations
+<a href="https://choum.net/lettreries">there</a>.</li>
 </ul>
 </div>
 
@@ -110,7 +97,7 @@ written in Rust
 
 <p>I took part to the
   <a href="https://www.imo-official.org/team_r.aspx?code=FRA&amp;year=2008">49th International Mathematical Olympiad</a>
-  in Mardid (2008). I awarded a bronze medal.</p>
+  in Madrid (2008) as a member of the French team. I awarded a bronze medal.</p>
 </div>
 
     <script type="text/javascript" async

@@ -1,0 +1,76 @@
+- title: An improved procedure for colouring graphs of bounded local density
+  coauthors:
+    - eoin
+    - ross
+  journal: SODA21
+  year: 2021
+  arxiv: 2007.07874
+- title: Regular Turán numbers and some Gan-Loh-Sudakov-type problems.
+  coauthors:
+    - stijn
+    - ross
+  arxiv: 1911.08452
+  year: 2020
+- title: Bipartite induced density in triangle-free graphs
+  coauthors:
+    - wouter
+    - ross
+    - francois
+  journal: Electronic Journal of Combinatorics
+  year: 2020
+  arxiv: 1808.02512
+- title: Occupancy fraction, fractional colouring, and triangle fraction
+  coauthors:
+    - ewan
+    - ross
+    - francois
+  arxiv: 1812.11152
+- title: Colouring triangle-free graphs with local list sizes
+  coauthors:
+    - ewan
+    - ross
+    - francois
+  journal: Random Structures & Algorithms
+  arxiv: 1812.01534
+  year: 2020
+- title: Exact distance coloring in trees
+  coauthors:
+    - nicolas bousquet
+    - louis
+    - ararat
+  arxiv: 1703.06047 
+- title: Equitable Colorings of $K_4$-minor-free Graphs
+  coauthors:
+    - jean-sebastien
+  arxiv: 1703.02250 
+- title: Additive bases and flows in graphs
+  coauthors:
+    - louis
+    - tien-nam
+    - stephan
+- title: Colouring squares of claw-free graphs
+  coauthors:
+    - ross
+    - lucas
+  arxiv: 1609.08645 
+- title: Limits of order-types
+  coauthors:
+    - xavier
+    - alfredo
+    - jean-sebastien
+    - jan
+  journal: 31st International Symposium on Computational Geometry
+  year: 2015
+- title: On Fixed-Polynomial Size Circuit Lower Bounds for Uniform Polynomials in the Sense of Valiant
+  coauthors:
+    - herve fournier
+    - sylvain
+  journal: Information and Computation
+  year: 2015
+- title: The worst case behavior of randomized gossip protocols
+  coauthors:
+    - herve baumann
+    - pierre
+    - hovhannes
+  journal: Theorical Computer Science (2014)
+  year: 2014
