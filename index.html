@@ -1,5 +1,10 @@
 ---
 title: Rémi de Verclos
+chapters:
+  - research
+  - teaching
+  - projects
+  - others
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -11,30 +16,88 @@ title: Rémi de Verclos
     <meta name="keywords" content=""/>
     <meta charset="utf-8">
     <meta name="robots" content="noodp"/>
-    <script type="http/javascript" src="http://livejs.com/live.js"></script>
+    <link rel="canonical" href="https://remi-de-verclos.github.io/">
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <script language="Javascript">
+      function show(id){
+	  for (c of document.getElementsByClassName("chapter")) {
+	      c.style.display="none";
+	  }
+	  document.getElementById(id).style.display="block"
+      }
+    </script> 
   </head>
-<body class="">
+  <body class="">
+
 
 <div class="bloc">
-  <h2> Rémi de Verclos </h2>
-  <a>Phd Computer Science</a>
-  <p><a>remi . de . joannis de . verclos at ens-lyon.org</a></p>
-<!--  <a><small>My full name is de Joannis de Verclos, so you can also see this one.</small></a>
-!-->
-<p> I used to be Postdoctoral reasearcher in the
-<a href="https://www.ru.nl/math/">Departement of Mathematics</a>
-at Radboud University in Nijmegen.</p>
+  <center> <a href="https://remi-de-verclos.github.io/">
+      <h1 class="title"> Rémi de Verclos </h1>
+  </a></center>
+  <p class="coord">remi.de.joannis.de.verclos at ens-lyon.org</p>
+  <p class="coord">Burchtstraat 100</p>
+  <p class='coord'>6511RJ Nijmegen</p>
+
+  <p>I obtained my Ph.D. in Computer Science at
+  the <a href="https://g-scop.grenoble-inp.fr/en">G-SCOP Laboratory</a> in Grenoble in 2018.
+  Until 2020, I was postdoctoral reasearcher at the
+  <a href="https://www.ru.nl/math/">Departement of Mathematics</a> of Radboud University
+  in Nijmegen.</p>
+
+  <p>I am currently looking for a position outside of Academia
+  in the Netherlands around Nijmegen, or remote.</p>
+
+<table class= "nav">
+  <tbody><tr>
+      {% for chapter in page.chapters %}
+      <td class="nav-item" onclick="show('{{-chapter-}}')">
+	{{chapter | capitalize}}
+      </td>
+      {% endfor %}
+    </tr>
+</tbody></table>
+
 </div>
 
-<div class="bloc">
+<div class="bloc chapter" id='research'>
+<h1>Research</h1>
 
-<h1 id="publications">Publications</h1>
+<h3>Research interrests</h3>
+<p>
+I am interrested in all aspects of theoretical computer science and discrete mathematics.
+In the past, I worked in particular on the following topics:
+</p>
+<ul>
+<li>Graph theory, and particularly graph coloring</li>
+<li>Extremal combinatorics</li> 
+<li>Random discrete structures</li>
+<li>Graph limits</li>
+<li>Algorithms</li>
+<li>Computationnal Geometry</li>
+<li>Property Testing</li>
+</ul>
+
+<h3>Phd Thesis</h3>
+<p>
+  I did my PhD in <a href="https://g-scop.grenoble-inp.fr/en">G-SCOP Laboratory</a>
+  (Université Grenoble Alpe),
+  under the supervision of
+  <a href="https://oc.g-scop.grenoble-inp.fr/esperet/">Louis Esperet</a>
+  and
+  <a href="http://lbgi.fr/~sereni/">Jean-Sébastien Sereni</a>.
+The thesis explores the connections of three topics with limits of combinatorials objects:
+<em>property testing</em>, <em>computationnal geometry</em> and
+<em>flag algebras</em>.
+</p>
+
+<p>Manuscript:
+<a href="manuscript.pdf">Applications of limits of combinatorial structures in geometry and graph theory</a></p>
+
+<h3>Publications</h3>
 
 <ul>
-  
   {% for paper in site.data.publications %}
-  <li><h4><strong>{{ paper.title }}</strong></h4>
+  <li><h4 class=publi>{{ paper.title }}</h4>
     {% if paper.coauthors %}
     with
     {%- for coauthor in paper.coauthors -%}
@@ -42,11 +105,13 @@ at Radboud University in Nijmegen.</p>
     {%- unless forloop.first -%}{% if forloop.last %}
     and
     {%- else -%},{%- endif -%}{% endunless %}
+    <span class="coauthor">
     {% if author.site -%}
     <a href="{{author.site}}">{{author.name}}</a>
     {%- else -%}
     {{ author.name }}
     {%- endif -%}
+    </span>
     {%- endfor -%}
     {%- else -%}
     Single author paper
@@ -54,11 +119,17 @@ at Radboud University in Nijmegen.</p>
     {% if paper.journal %}<em>{{paper.journal}}</em>{% endif %}
     {% if paper.arxiv %}
     <a href={{"https://arxiv.org/abs/" | append: paper.arxiv}}>arxiv:{{paper.arxiv}}</a>
+    <details><summary><i>Abstract</i></summary>
+      <div class="indetails">
+	{{site.data.abstracts[paper.arxiv]}}
+	</div>
+    </details>
     {% endif %}
-  {% endfor %}
+    {% endfor %}
+    </li>
 </ul>
 
-<h2>Co-authors</h2>
+<h3>Co-authors</h3>
 {% assign coauthors = site.data.coauthors | sort %}
 {% for author_entry in coauthors %}
 {% assign author=author_entry[1] %}
@@ -73,25 +144,66 @@ at Radboud University in Nijmegen.</p>
 
 
 
-<div class="bloc">
-<h1 id="programs">Programs</h1>
+<div class="bloc chapter" id="teaching">
+<h1>Teaching</h1>
 
+<h3>Supervision</h3>
+I supervised the master thesis of two students.
 <ul>
-<li>An <a href="https://crates.io/crates/flag-algebra">implementation of flag algebras</a>
-written in Rust
-(a previous version in OCaml can be found
-  <a href="https://github.com/avangogo/flag">there</a>).</li>
+  <li>In 2019-2020: Eoin Hurley, MSc in Mathematical Sciences thesis, Mathematical Institute, Utrecht, 2019-2020.
+  </li>
+<li>In 2018: Nicolas Grelier, MSc in Engineering research internship in Nijmegen, IMT Atlantique, 2018.</li>
+</ul>
+
+<h3>Teaching experience</h3>
+<ul>
+<li>2017-2020: Guest teacher in <em>Probabilistic and Extremal Combinatorics</em> for the Dutch
+national Mastermath program.</li>
+<li>2014-2017: <em>Graph Theory</em>. L2 Computer sience. Université Grenoble Alpe.
+Courses, Tutorials, Practical sessions in C++.
+</li>
+<li>2014-2017: <em>Production Management</em>. M1 MIAGE. Université Grenoble Alpe.
+Tutorials and Practical sessions in R.
+</li>
+</ul>
+
+</div>
+
+<div class="bloc chapter" id="projects">
+<h1>Projects</h1>
+<h3>Flag algebras</h3>
+<p>Flag algebras is a theory that uses Semi-Definite Programming
+  to produce some kind of computer-assisted proves.</p>
+
+During my postdoc, I developped
+an <a href="https://crates.io/crates/flag-algebra">implementation of flag algebras</a>
+written in Rust to help me in my own research.
+The documentation can be found
+<a href="https://docs.rs/flag-algebra/0.1.11/flag_algebra/">there</a>.
+If you have any trouble using it, don't hesitate to contact me.
+
+<p>An ealier (and slower) version in OCaml can be found
+<a href="https://github.com/avangogo/flag">there</a>.</p>
+
+<h3>Other project</h3>
+<p>Smaller projects can be found on my
+<a href="https://github.com/avangogo">github page</a>. A non-exaustive list:</p>
+<ul>
 <li><a href="https://github.com/avangogo/letteries">Lettreries</a>,
-  An automatic writer of french poetry that randomly produces grammatically correct text with constraits of verse form and rhymes by backtracking on a Markov chain.
+  an automatic writer of french poetry that randomly produces grammatically correct text with constraints of verse form and rhymes by backtracking on a Markov chain.
   The programs computes phonetics representations (IPA) of words with a finite transducer
   built from a set of rules.
   You can read some of its creations
 <a href="https://choum.net/lettreries">there</a>.</li>
+<li>
+  <a href="https://crates.io/crates/canonical-form">A Rust crate</a>
+  to reduce graphs and other structures modulo isomorphisms.
+</li>
 </ul>
 </div>
 
-<div class="bloc">
-<h1 id="other">Other</h1>
+<div class="bloc chapter" id="others">
+<h1>Award</h1>
 
 <!-- <p>I like to dance swing and play boardgames.</p> -->
 

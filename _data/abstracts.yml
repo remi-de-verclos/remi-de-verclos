@@ -1,0 +1,143 @@
+"1902.06135": "We prove that the class of chordal graphs is easily testable in the following
+sense. There exists a constant $c&gt;0$ such that, if adding/removing at most
+$\\epsilon n^2$ edges to a graph $G$ with $n$ vertices does not make it chordal,
+then a set of $(1/\\epsilon)^c$ vertices of $G$ chosen uniformly at random
+induces a graph that is not chordal with probability at least $1/2$. This
+answers a question of Gishboliner and Shapira."
+"1703.02250": "We demonstrate that for every positive integer $\\Delta$, every
+$K_4$-minor-free graph with maximum degree $\\Delta$ admits an equitable coloring
+with k colors wherek $\\ge$ ($\\Delta$+3)/2. This bound is tight and confirms a
+conjecture by Zhang and Whu. We do not use the discharging method but rather
+exploit decomposition trees of $K_4$-minor-free graphs."
+"1911.08452": "Motivated by a Gan-Loh-Sudakov-type problem, we introduce the regular Turán
+numbers, a natural variation on the classical Turán numbers for which the
+host graph is required to be regular. Among other results, we prove a striking
+supersaturation version of Mantel's theorem in the case of a regular host graph
+of odd order. We also characterise the graphs for which the regular Turán
+numbers behave classically or otherwise."
+"1304.5910": "Assuming the Generalised Riemann Hypothesis (GRH), we show that for all k,
+there exist polynomials with coefficients in MA having no arithmetic
+circuits of size $O(n^k)$ over the complex field (allowing any complex constant).
+We also build a family of polynomials that can be evaluated in AM having no
+arithmetic circuits of size $O(n^k)$. Then we investigate the link between
+fixed-polynomial size circuit bounds in the Boolean and arithmetic settings. In
+characteristic zero, it is proved that $NP \\not\\subset size(n^k)$, or $MA
+\\subset size(n^k)$, or NP=MA imply lower bounds on the circuit size of uniform
+polynomials in n variables from the class VNP over the complex field, assuming
+GRH. In positive characteristic p, uniform polynomials in VNP have circuits of
+fixed-polynomial size if and only if both VP=VNP over $F_p$ and Mod_pP has
+circuits of fixed-polynomial size."
+"1701.03366": "It was conjectured by Jaeger, Linial, Payan, and Tarsi in 1992 that for any
+prime number $p$, there is a constant $c$ such that for any $n$, the union
+(with repetition) of the vectors of any family of $c$ linear bases of
+$\\mathbb{Z}_p^n$ forms an additive basis of $\\mathbb{Z}_p^n$ (i.e. any element
+of $\\mathbb{Z}_p^n$ can be expressed as the sum of a subset of these vectors).
+In this note, we prove this conjecture when each vector contains at most two
+non-zero entries. As an application, we prove several results on flows in
+highly edge-connected graphs, extending known results. For instance, assume
+that $p\\ge 3$ is a prime number and $\\vec{G}$ is a directed, highly
+edge-connected graph in which each arc is given a list of two distinct values
+in $\\mathbb{Z}_p$. Then $\\vec{G}$ has a $\\mathbb{Z}_p$-flow in which each arc
+is assigned a value of its own list."
+"1609.08645": "Is there some absolute $\\varepsilon &gt; 0$ such that for any claw-free graph
+$G$, the chromatic number of the square of $G$ satisfies $\\chi(G^2) \\le
+(2-\\varepsilon) \\omega(G)^2$, where $\\omega(G)$ is the clique number of $G$?
+Erdős and Nešetřil asked this question for the specific case of $G$
+the line graph of a simple graph and this was answered in the affirmative by
+Molloy and Reed. We show that the answer to the more general question is also
+yes, and moreover that it essentially reduces to the original question of
+Erdős and Nešetřil."
+"1811.02236": "We apply ideas from the theory of limits of dense combinatorial structures to
+study order types, which are combinatorial encodings of finite point sets.
+Using flag algebras we obtain new numerical results on the Erdős problem of
+finding the minimal density of 5-or 6-tuples in convex position in an arbitrary
+point set, and also an inequality expressing the difficulty of sampling order
+types uniformly. Next we establish results on the analytic representation of
+limits of order types by planar measures. Our main result is a rigidity
+theorem: we show that if sampling two measures induce the same probability
+distribution on order types, then these measures are projectively equivalent
+provided the support of at least one of them has non-empty interior. We also
+show that some condition on the Hausdorff dimension of the support is necessary
+to obtain projective rigidity and we construct limits of order types that
+cannot be represented by a planar measure. Returning to combinatorial geometry
+we relate the regularity of this analytic representation to the aforementioned
+problem of Erdős on the density of k-tuples in convex position, for large
+k."
+"812.01534": "We prove two distinct and natural refinements of a recent breakthrough result
+of Molloy (and a follow-up work of Bernshteyn) on the (list) chromatic number
+of triangle-free graphs. In both our results, we permit the amount of colour
+made available to vertices of lower degree to be accordingly lower. One result
+concerns list colouring and correspondence colouring, while the other concerns
+fractional colouring. Our proof of the second illustrates the use of the
+hard-core model to prove a Johansson-type result, which may be of independent
+interest."
+"1812.11152": "Given $\\varepsilon&gt;0$, there exists $f_0$ such that, if $f_0 \\le f \\le
+\\Delta^2+1$, then for any graph $G$ on $n$ vertices of maximum degree $\\Delta$
+in which the neighbourhood of every vertex in $G$ spans at most $\\Delta^2/f$
+edges, (i) an independent set of $G$ drawn uniformly at random has at least
+$(1/2-\\varepsilon)(n/\\Delta)\\log f$ vertices in expectation, and (ii) the
+fractional chromatic number of $G$ is at most $(2+\\varepsilon)\\Delta/\\log f$.
+These bounds cannot in general be improved by more than a factor $2$
+asymptotically. One may view these as stronger versions of results of Ajtai,
+Komlós and Szemerédi (1981) and Shearer (1983). The proofs use a tight
+analysis of the hard-core model."
+"1905.06031": "We investigate the effect of a fixed forbidden clique minor upon the strong
+chromatic index, both in multigraphs and in simple graphs.
+  We conjecture for each $k\\ge 4$ that any $K_k$-minor-free multigraph of
+maximum degree $\\Delta$ has strong chromatic index at most
+$\\frac32(k-2)\\Delta$. We present a construction certifying that if true the
+conjecture is asymptotically sharp as $\\Delta\\to\\infty$. In support of the
+conjecture, we show it in the case $k=4$ and prove the statement for strong
+clique number in place of strong chromatic index.
+  By contrast, we make a basic observation that for $K_k$-minor-free simple
+graphs, the problem of strong edge-colouring is \"between\" Hadwiger's Conjecture
+and its fractional relaxation.
+  We also treat $K_k$-minor-free multigraphs of edge-diameter at most $2$."
+"2007.07874": "We develop an improved bound for the chromatic number of graphs of maximum
+degree $\\Delta$ under the assumption that the number of edges spanning any
+neighbourhood is at most $(1-\\sigma)\\binom{\\Delta}{2}$ for some fixed
+$0&lt;\\sigma&lt;1$. The leading term in the reduction of colours achieved through
+this bound is best possible as $\\sigma\\to0$. As two consequences, we advance
+the state of the art in two longstanding and well-studied graph colouring
+conjectures, the Erdős-Nešetřil conjecture and Reed's conjecture.
+We prove that the strong chromatic index is at most $1.772\\Delta^2$ for any
+graph $G$ with sufficiently large maximum degree $\\Delta$. We prove that the
+chromatic number is at most $\\lceil 0.881(\\Delta+1)+0.119\\omega\\rceil$ for any
+graph $G$ with clique number $\\omega$ and sufficiently large maximum degree
+$\\Delta$. Additionally, we show how our methods can be adapted under the
+additional assumption that the codegree is at most $(1-\\sigma)\\Delta$, and
+establish what may be considered first progress towards a conjecture of Vu."
+"1808.02512": "We prove that any triangle-free graph on $n$ vertices with minimum degree at
+least $d$ contains a bipartite induced subgraph of minimum degree at least
+$d^2/(2n)$. This is sharp up to a logarithmic factor in $n$. Relatedly, we show
+that the fractional chromatic number of any such triangle-free graph is at most
+the minimum of $n/d$ and $(2+o(1))\\sqrt{n/\\log n}$ as $n\\to\\infty$. This is
+sharp up to constant factors. Similarly, we show that the list chromatic number
+of any such triangle-free graph is at most $O(\\min\\{\\sqrt{n},(n\\log n)/d\\})$ as
+$n\\to\\infty$.
+<br>Relatedly, we also make two conjectures. First, any triangle-free graph on
+$n$ vertices has fractional chromatic number at most
+$(\\sqrt{2}+o(1))\\sqrt{n/\\log n}$ as $n\\to\\infty$. Second, any triangle-free
+graph on $n$ vertices has list chromatic number at most $O(\\sqrt{n/\\log n})$ as
+$n\\to\\infty$."
+"1812.01534": "We prove two distinct and natural refinements of a recent breakthrough result
+of Molloy (and a follow-up work of Bernshteyn) on the (list) chromatic number
+of triangle-free graphs. In both our results, we permit the amount of colour
+made available to vertices of lower degree to be accordingly lower. One result
+concerns list colouring and correspondence colouring, while the other concerns
+fractional colouring. Our proof of the second illustrates the use of the
+hard-core model to prove a Johansson-type result, which may be of independent
+interest."
+"1703.06047": "For an integer $q\\ge 2$ and an even integer $d$, consider the graph obtained
+from a large complete $q$-ary tree by connecting with an edge any two vertices
+at distance exactly $d$ in the tree. This graph has clique number $q+1$, and
+the purpose of this short note is to prove that its chromatic number is
+$\\Theta\\big(\\tfrac{d \\log q}{\\log d}\\big)$. It was not known that the chromatic
+number of this graph grows with $d$. As a simple corollary of our result, we
+give a negative answer to a problem of van den Heuvel and Naserasr, asking
+whether there is a constant $C$ such that for any odd integer $d$, any planar
+graph can be colored with at most $C$ colors such that any pair of vertices at
+distance exactly $d$ have distinct colors. Finally, we study interval coloring
+of trees (where vertices at distance at least $d$ and at most $cd$, for some
+real $c&gt;1$, must be assigned distinct colors), giving a sharp upper bound in
+the case of bounded degree trees."

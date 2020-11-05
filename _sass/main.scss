@@ -1,23 +1,70 @@
+$font1: EB Garamond, sans-serif;
+ul { font-size: 17px; list-style-type: circle; }
+OL { font-size: 17px; }
+A { text-decoration:none; color:maroon;}
+A:visited {color:#555555; }
+A:hover {color:red}
+h1 { font-family: $font1; font-size: 28pt;}
+h2 { font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif; font-size: 28px;}
+h3 { font-family: Arial, Helvetica, Sans-Serif; text-align: left; font-size: 19px; font-style: italic; font-weight: normal; }
+h4 { font-family:Arial, Helvetica, Sans-Serif; text-align: left; padding-bottom: 0px; margin-bottom: 0px; }
+BODY { font-family: "Computer Modern Serif", serif; color: #1E2316; font-size: 16px; }
+P { font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif; color: #1E2316; font-size: 16px; }
+ul { font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif; font-size: 15px; list-style-type: circle; }
+ol { font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif; font-size: 15px; }
+BLOCKQUOTE { font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif; font-size: 15px; }
 body {
-  background-color: white;
+    background-color: #596e79;
 }
 a {
   text-decoration: none;
 }
-a:link {
+.publi { color: #596e79; font-weight: bold; }
+.coauthor {
+}
+.nav {
+    font-family: $font1;
+    font-size: 20pt;
+    horizontal-align: middle;
+    margin: auto;
+}
+.nav-item {
+    background: #c7b198;
+    padding: 0px 10px;
+    padding: 5px;
+}
+.nav-item:hover {
+    background: #dfd3c3;
+}
+div.chapter {
+}
+.indetails {
+    padding: 5px;
+    background: #fffcf3;
+}
+/*a:link {
   color: navy;
 }
 a:visited {
   color: midnightblue;
+}*/
+.title {
+    margin: auto;
 }
-a:hover {
+.coord {
+    font-family: "opensans-regular", sans-serif;
+    margin: 0px;
+}
+/*a:hover {
   color: royalblue;
-}
+}*/
 .bloc {
+  background-color: #f0ece3;
+  color: black;
+  box-shadow: 0 10px 30px black;
   margin: auto;
   width: 70%;
-  background-color: Gainsboro;
-  border: 5px solid white;
+  margin-top: 15px;
   border-radius: 15px;
   padding-top: 20px;
   padding-right: 60px;
