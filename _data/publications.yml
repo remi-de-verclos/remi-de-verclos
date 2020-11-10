@@ -11,6 +11,13 @@
     - ross
   arxiv: "1911.08452"
   year: 2020
+- title: Approximate strong edge-colouring of unit disk graphs
+  year: 2020
+  coauthors:
+    - nicolas grelier
+    - ross
+    - francois
+  journal: WAOA 2019, Lecture Notes in Computer Science
 - title: Bipartite induced density in triangle-free graphs
   coauthors:
     - wouter
@@ -36,6 +43,22 @@
 - title: Chordal graphs are easily testable
   year: 2019
   arxiv: '1902.06135'
+- title: Chromatic structure in triangle-free graphs
+  year: 2019
+  arxiv: '1912.13328'
+  coauthors:
+    - aravind
+    - stijn
+    - wouter
+    - ross
+    - viresh
+- title: Strong chromatic index and Hadwiger number
+  year: 2019
+  arxiv: '1905.06031'
+  coauthors:
+    - wouter
+    - ross
+    - francois
 - title: Exact distance coloring in trees
   coauthors:
     - nicolas bousquet

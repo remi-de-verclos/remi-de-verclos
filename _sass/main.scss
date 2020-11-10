@@ -1,5 +1,5 @@
 $font1: "Trebuchet MS", Helvetica, sans-serif;
-ul { font-size: 17px; list-style-type: circle; }
+ul { list-style-type: circle; }
 OL { font-size: 17px; }
 A { text-decoration:none; color:maroon;}
 A:visited {color:#555555; }
@@ -8,11 +8,10 @@ h1 { font-family: $font1; font-size: 28pt;}
 h2 { font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif; font-size: 28px;}
 h3 { font-family: Arial, Helvetica, Sans-Serif; text-align: left; font-size: 19px; font-style: italic; font-weight: normal; }
 h4 { font-family:Arial, Helvetica, Sans-Serif; text-align: left; padding-bottom: 0px; margin-bottom: 0px; }
-BODY { font-family: "Computer Modern Serif", serif; color: #1E2316; font-size: 16px; }
-P { font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif; color: #1E2316; font-size: 16px; }
+body { font-family: "Computer Modern Serif", serif; color: #1E2316; font-size: 16px; }
+p { font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif; color: #1E2316; font-size: 16px; }
 ul { font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif; font-size: 15px; list-style-type: circle; }
 ol { font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif; font-size: 15px; }
-BLOCKQUOTE { font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif; font-size: 15px; }
 body {
     background-color: #596e79;
 }
@@ -26,9 +25,6 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-
-//    flex-direction: row;
 }
 #photo {
     margin: 0 5pt 0 0;
@@ -56,6 +52,7 @@ a {
 div.chapter {
 }
 .indetails {
+    margin: 0px;
     padding: 5px;
     background: #fffcf3;
 }

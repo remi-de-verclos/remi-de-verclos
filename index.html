@@ -2,8 +2,8 @@
 title: Rémi de Verclos
 chapters:
   - research
+  - coding
   - teaching
-  - projects
   - others
 ---
 <!DOCTYPE html>
@@ -51,7 +51,7 @@ chapters:
 
 <p>I like solving math problems, programming and learning new things.</p>
 
-  <p>I am currently looking for a position of R&D Engineer or Data Scientits
+  <p>I am looking for a position as an R&D Engineer or Data Scientit
   around Nijmegen, Netherlands, or remote.</p>
 
   <div class= "nav">
@@ -98,7 +98,7 @@ The thesis explores the connections of three topics with limits of combinatorial
 <p>Manuscript:
 <a href="manuscript.pdf">Applications of limits of combinatorial structures in geometry and graph theory</a></p>
 
-<h3>Publications</h3>
+<h3>Scientific publications</h3>
 
 <ul>
   {% for paper in site.data.publications %}
@@ -125,9 +125,9 @@ The thesis explores the connections of three topics with limits of combinatorial
     {% if paper.arxiv %}
     <a href={{"https://arxiv.org/abs/" | append: paper.arxiv}}>arxiv:{{paper.arxiv}}</a>
     <details><summary><i>Abstract</i></summary>
-      <div class="indetails">
+      <p class="indetails">
 	{{site.data.abstracts[paper.arxiv]}}
-	</div>
+      </p>
     </details>
     {% endif %}
     {% endfor %}
@@ -147,35 +147,8 @@ The thesis explores the connections of three topics with limits of combinatorial
 {% endfor %}
 </div>
 
-
-
-<div class="bloc chapter" id="teaching">
-<h1>Teaching</h1>
-
-<h3>Supervision</h3>
-I supervised the master thesis of two students.
-<ul>
-  <li>In 2019-2020: Eoin Hurley, MSc in Mathematical Sciences thesis, Mathematical Institute, Utrecht, 2019-2020.
-  </li>
-<li>In 2018: Nicolas Grelier, MSc in Engineering research internship in Nijmegen, IMT Atlantique, 2018.</li>
-</ul>
-
-<h3>Teaching experience</h3>
-<ul>
-<li>2017-2020: Guest teacher in <em>Probabilistic and Extremal Combinatorics</em> for the Dutch
-national Mastermath program.</li>
-<li>2014-2017: <em>Graph Theory</em>. L2 Computer science. Université Grenoble Alpe.
-Courses, Tutorials, Practical sessions in C++.
-</li>
-<li>2014-2017: <em>Production Management</em>. M1 MIAGE. Université Grenoble Alpe.
-Tutorials and Practical sessions in R.
-</li>
-</ul>
-
-</div>
-
-<div class="bloc chapter" id="projects">
-<h1>Projects</h1>
+<div class="bloc chapter" id="coding">
+<h1>Coding</h1>
 <h3>Flag algebras</h3>
 <p>Flag algebras is a theory that uses Semi-Definite Programming
   to produce some kind of computer-assisted proofs.</p>
@@ -207,12 +180,38 @@ If you have any trouble using it, don't hesitate to contact me.
 </ul>
 </div>
 
+
+<div class="bloc chapter" id="teaching">
+<h1>Teaching</h1>
+
+<h3>Supervision</h3>
+I supervised the master thesis of two students.
+<ul>
+  <li>In 2019-2020: Eoin Hurley, MSc in Mathematical Sciences thesis, Mathematical Institute, Utrecht, 2019-2020.
+  </li>
+<li>In 2018: Nicolas Grelier, MSc in Engineering research internship in Nijmegen, IMT Atlantique, 2018.</li>
+</ul>
+
+<h3>Teaching experience</h3>
+<ul>
+<li>2017-2020: Guest teacher in <em>Probabilistic and Extremal Combinatorics</em> for the Dutch
+national Mastermath program.</li>
+<li>2014-2017: <em>Graph Theory</em>. L2 Computer science. Université Grenoble Alpe.
+Courses, Tutorials, Practical sessions in C++.
+</li>
+<li>2014-2017: <em>Production Management</em>. M1 MIAGE. Université Grenoble Alpe.
+Tutorials and Practical sessions in R.
+</li>
+</ul>
+
+</div>
+
 <div class="bloc chapter" id="others">
 <h1>Award</h1>
 
 <!-- <p>I like to dance swing and play board games.</p> -->
 
-<p>I took part to the
+<p>I took part in the
   <a href="https://www.imo-official.org/team_r.aspx?code=FRA&amp;year=2008">49th International Mathematical Olympiad</a>
   in Madrid (2008) as a member of the French team. I awarded a bronze medal.</p>
 </div>
