@@ -53,15 +53,13 @@ chapters:
   <p>I am currently looking for a position of R&D Engineer or Data Scientits
   around Nijmegen, Netherlands, or remote.</p>
 
-<table class= "nav">
-  <tbody><tr>
-      {% for chapter in page.chapters %}
-      <td class="nav-item" onclick="show('{{-chapter-}}')">
-	{{chapter | capitalize}}
-      </td>
-      {% endfor %}
-    </tr>
-</tbody></table>
+  <div class= "nav">
+    {% for chapter in page.chapters %}
+    <div class="nav-item" onclick="show('{{-chapter-}}')">
+      {{chapter | capitalize}}
+    </div>
+    {% endfor %}
+  </div>
 
 </div>
 

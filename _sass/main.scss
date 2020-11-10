@@ -24,26 +24,31 @@ a {
 }
 .cap {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+//    flex-direction: row;
 }
 #photo {
-    margin: 0 5pt 0 auto;
+    margin: 0 5pt 0 0;
     vertical-align: middle;
 }
 #title {
     vertical-align: middle;
-    margin-right: auto !important;
     align-self: center !important;
 }
 .nav {
+    display: flex;
     font-family: $font1;
     font-size: 16pt;
-    horizontal-align: middle;
-    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .nav-item {
     background: #c7b198;
-    padding: 5px 15px;
+    padding: 5px 20px;
+    margin: 3px;
 }
 .nav-item:hover {
     background: #dfd3c3;
@@ -54,12 +59,6 @@ div.chapter {
     padding: 5px;
     background: #fffcf3;
 }
-/*a:link {
-  color: navy;
-}
-a:visited {
-  color: midnightblue;
-}*/
 .title {
     margin: auto;
 }
