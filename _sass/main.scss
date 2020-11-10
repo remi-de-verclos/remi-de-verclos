@@ -1,4 +1,4 @@
-$font1: EB Garamond, sans-serif;
+$font1: "Trebuchet MS", Helvetica, sans-serif;
 ul { font-size: 17px; list-style-type: circle; }
 OL { font-size: 17px; }
 A { text-decoration:none; color:maroon;}
@@ -22,16 +22,28 @@ a {
 .publi { color: #596e79; font-weight: bold; }
 .coauthor {
 }
+.cap {
+    display: flex;
+    flex-direction: row;
+}
+#photo {
+    margin: 0 5pt 0 auto;
+    vertical-align: middle;
+}
+#title {
+    vertical-align: middle;
+    margin-right: auto !important;
+    align-self: center !important;
+}
 .nav {
     font-family: $font1;
-    font-size: 20pt;
+    font-size: 16pt;
     horizontal-align: middle;
     margin: auto;
 }
 .nav-item {
     background: #c7b198;
-    padding: 0px 10px;
-    padding: 5px;
+    padding: 5px 15px;
 }
 .nav-item:hover {
     background: #dfd3c3;
