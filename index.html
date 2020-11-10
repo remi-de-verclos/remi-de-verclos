@@ -103,8 +103,7 @@ The thesis explores the connections of three topics with limits of combinatorial
 <ul>
   {% for paper in site.data.publications %}
   <li><h4 class=publi>{{ paper.title }}</h4>
-    {% if paper.coauthors %}
-    with
+    {% if paper.coauthors %}with
     {%- for coauthor in paper.coauthors -%}
     {%- assign author = site.data.coauthors[coauthor] -%}
     {%- unless forloop.first -%}{% if forloop.last %}

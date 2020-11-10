@@ -141,3 +141,26 @@ distance exactly $d$ have distinct colors. Finally, we study interval coloring
 of trees (where vertices at distance at least $d$ and at most $cd$, for some
 real $c&gt;1$, must be assigned distinct colors), giving a sharp upper bound in
 the case of bounded degree trees."
+"1912.13328": "Motivated by a recent conjecture of the first author, we prove that every
+properly coloured triangle-free graph of chromatic number $χ$ contains a
+rainbow independent set of size $\\lceil\\frac12χ\\rceil$. This is sharp up to
+a factor $2$. This result and its short proof have implications for the related
+notion of chromatic discrepancy.
+  Drawing inspiration from both structural and extremal graph theory, we
+conjecture that every triangle-free graph of chromatic number $χ$ contains
+an induced cycle of length $Ω(χ\\logχ)$ as $χ\\to\\infty$. Even if
+one only demands an induced path of length $Ω(χ\\logχ)$, the
+conclusion would be sharp up to a constant multiple. We prove it for regular
+girth $5$ graphs and for girth $21$ graphs.
+  As a common strengthening of the induced paths form of this conjecture and of
+Johansson&#39;s theorem (1996), we posit the existence of some $c &gt;0$ such that for
+every forest $H$ on $D$ vertices, every triangle-free and induced $H$-free
+graph has chromatic number at most $c D/\\log D$. We prove this assertion with
+\"triangle-free\" replaced by \"regular girth $5$\"."
+"1905.06031": "We investigate the effect of a fixed forbidden clique minor upon the strong chromatic index, both in multigraphs and in simple graphs.
+  We conjecture for each $k\\ge 4$ that any $K_k$-minor-free multigraph of maximum degree $Δ$ has strong chromatic index at most $\\frac32(k-2)Δ$. We present a construction certifying that if true the conjecture is asymptotically sharp as $Δ\\to\\infty$. In support of the conjecture, we show it in the case $k=4$ and prove the statement for strong
+clique number in place of strong chromatic index.
+  By contrast, we make a basic observation that for $K_k$-minor-free simple
+graphs, the problem of strong edge-colouring is between Hadwiger's Conjecture
+and its fractional relaxation.
+  We also treat $K_k$-minor-free multigraphs of edge-diameter at most $2$."
