@@ -2,10 +2,10 @@
   coauthors:
     - eoin
     - ross
-  journal: SODA21
+  journal: SODA 2021
   year: 2021
   arxiv: "2007.07874"
-- title: Regular Turán numbers and some Gan-Loh-Sudakov-type problems.
+- title: Regular Turán numbers and some Gan-Loh-Sudakov-type problems
   coauthors:
     - stijn
     - ross
@@ -64,22 +64,30 @@
     - nicolas bousquet
     - louis
     - ararat
-  arxiv: '1703.06047' 
-- title: Equitable Colorings of $K_4$-minor-free Graphs
-  coauthors:
-    - jean-sebastien
-  arxiv: "1703.02250" 
+  arxiv: '1703.06047'
+  journal: Combinatorics, Probability and Computing
+  year: 2019
 - title: Additive bases and flows in graphs
+  year: 2018
+  journal: SIAM Journal on Discrete Mathematics
   coauthors:
     - louis
     - tien-nam
     - stephan
   arxiv: '1701.03366'
 - title: Colouring squares of claw-free graphs
+  journal: Canadian Journal of Mathematics
+  year: 2019
   coauthors:
     - ross
     - lucas
-  arxiv: '1609.08645' 
+  arxiv: '1609.08645'
+- title: Equitable Colorings of $K_4$-minor-free Graphs
+  coauthors:
+    - jean-sebastien
+  arxiv: "1703.02250"
+  journal: Journal of Graph Algorithms and Applications
+  year: 2017
 - title: Limits of order-types
   coauthors:
     - xavier
@@ -87,7 +95,7 @@
     - jean-sebastien
     - jan
   arxiv: '1811.02236'
-  journal: 31st International Symposium on Computational Geometry
+  journal: 31st International Symposium on Computational Geometry (SOCG 2015)
   year: 2015
 - title: On Fixed-Polynomial Size Circuit Lower Bounds for Uniform Polynomials in the Sense of Valiant
   coauthors:
