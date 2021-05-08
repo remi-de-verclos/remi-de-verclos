@@ -1,3 +1,9 @@
+- title: Improving Ultrametrics Embeddings Through Coresets
+  coauthors:
+    - vincent
+    - guillaume
+  journal: ICML 2021
+  year: 2021
 - title: An improved procedure for colouring graphs of bounded local density
   coauthors:
     - eoin
